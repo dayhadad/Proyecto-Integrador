@@ -16,7 +16,7 @@
 }
 
 .nav_top {
-    padding: 15px;
+    padding: 5px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -104,7 +104,7 @@
 
 /* Sector PROPUESTA EDUCATIVA --chequear de nuevo */
 .section_prop_edu {
-    padding: 30px;
+    padding: 20px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@
     height: 12em;
     border-radius: 50%;
     margin: 10px 10px;
-    margin-left: 60px;
+    margin-left: 30px;
     border: 6px solid var(--color2);
     transition: all 0.5s ease-out;
 }
@@ -276,27 +276,36 @@
 /* MEDIA QUERY */
 @media only screen and (max-width:426px) {
     nav ul {
-        height: 260px;
+        height: 270px;
         flex-direction: column;
         text-align: center;
-
     }
 
     .nav_top {
         overflow-x: hidden;
     }
-
+    .section_prop_edu{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    .card_prop_edu p{
+        text-align: left;
+    }
+    /* .img_prop_edu{
+        align-content: center;
+        justify-content: center;
+    }  -- no funciona centrar*/ 
     .footer_redes li {
         display: inline-block;
         margin: 10px;
     }
 }
-
+/* PROPUESTA EDUCATIVA NO QUEDAN CENTRADOS LAS IMG EN + DE 768PX */
 @media only screen and (min-width:768px) {
     .nav_top {
         width: 100%;
         height: 100%;
-
     }
 
     .nav_top_list {
@@ -326,9 +335,9 @@
 
 @media only screen and (min-width:1024px) {
     .nav_top_list a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         display: block;
-        padding: 10px;
+        padding: 5px;
     }
 
     .nav_top_list a:hover {
@@ -350,15 +359,25 @@
         width: 50%;
         height: 20em;
     }
-
+    .section_prop_edu{
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
+       width: 100%;
+    }
     .card_prop_edu img {
         width: 70%;
-        height: 15em;
-    }
+        height: 10em;
 
+    
+    }
+    .section_last_news{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .section_news {
         padding: 20px;
         margin-left: 30px;
+
     }
 
     .section_news p {
