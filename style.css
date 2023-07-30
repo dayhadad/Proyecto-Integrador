@@ -274,15 +274,20 @@
 }
 
 /* MEDIA QUERY */
+@media only screen and (min-width:320px){
+    .footer_redes{
+        width: 60%;
+    }
+    .footer_redes li{
+        font-size: 30px;
+        margin:5px;
+    }
+}
 @media only screen and (max-width:426px) {
     nav ul {
         height: 270px;
         flex-direction: column;
         text-align: center;
-    }
-
-    .nav_top {
-        overflow-x: hidden;
     }
     .section_prop_edu{
         display: grid;
