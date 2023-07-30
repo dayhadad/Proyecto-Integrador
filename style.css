@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color1: #EFF5F5;
+    ;
+    --color2: #1F8A70;
+    --color3: #00425A;
+    --color4: #181823;
+    --color5: #FC7300;
+}
+
+.nav_top {
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: var(--color3);
+}
+
+.nav_top_list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav_top_list a:hover {
+    border: 3px solid var(--color5);
+    border-radius: 5px;
+    color: var(--color5);
+}
+
+.nav_top_list a {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav_btn_inscripcion {
+    border: 3px solid var(--color1);
+    border-radius: 6px;
+}
+
+.banner_img {
+    width: 100%;
+    height: auto;
+}
+
+/* SECTOR INFO  --supuestamente ok*/
+.section_info {
+    /* margin: 25px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 300px; */
+}
+
+.div_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_parrafo1 {
+    padding: 30px;
+    text-align: start;
+    margin: 0 30px;
+}
+
+.info_parrafo2 {
+    padding: 30px;
+    text-align: end;
+    margin: 0 30px;
+}
+
+.div_info img {
+    width: 100%;
+    height: 15em;
+}
+
+.info_title1 {
+    text-align: start;
+    margin-top: 30px;
+    color: var(--color4);
+    text-indent: 20px;
+    font-weight: bold;
+}
+
+.info_title2 {
+    text-align: end;
+    margin-top: 40px;
+    color: var(--color4);
+    /* text-indent: 50px; */
+    font-weight: bold;
+}
+
+/* Sector PROPUESTA EDUCATIVA --chequear de nuevo */
+.section_prop_edu {
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: auto; */
+
+}
+
+.card_prop_edu {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card_prop_edu img {
+    width: 60%;
+    height: 12em;
+    border-radius: 50%;
+    margin: 10px 10px;
+    margin-left: 60px;
+    border: 6px solid var(--color2);
+    transition: all 0.5s ease-out;
+}
+
+.card_prop_edu img:hover {
+    transform: scale(1.2);
+}
+
+.card_prop_edu p {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--color4);
+}
+
+.title_prop_edu {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--color4);
+    font-weight: bold;
+}
+
+/* ULTIMAS NOTICIAS (supuestamente ok)*/
+.section_last_news {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+
+}
+
+.section_news {
+    border: 1px solid var(--color3);
+    border-radius: 5px;
+    width: 90%;
+    margin: 15px;
+}
+
+.section_news p {
+    margin: 10px;
+    text-align: left;
+}
+
+.section_news img {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.title_last_news {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: var(--color4);
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px;
+    background-color: var(--color5);
+    margin-top: 50px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+.footer_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_redes ul li :hover {
+    color: var(--color1);
+    transform: scale(1.3);
+}
+
+.footer_redes li {
+    font-size: 40px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.footer_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer_contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn_contacto {
+    border: 3px solid var(--color4);
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: 250px;
+}
+
+.container_icon {
+    display: flex;
+    gap: 15px;
+
+}
+
+.container_icon_wsp {
+    display: flex;
+    gap: 15px;
+}
+
+.container_icon_wsp i {
+    font-size: 2.3rem;
+}
+
+.container_icon i {
+    font-size: 2rem;
+}
+
+.footer_contacto .container_icon a:hover {
+    border: 3px solid var(--color1);
+    border-radius: 6px;
+    color: var(--color1);
+}
+
+.footer_contacto .container_icon_wsp a:hover {
+    border: 3px solid var(--color1);
+    border-radius: 6px;
+    color: var(--color1);
+}
+
+.copyright {
+    margin-top: 80px;
+    align-items: center;
+    color: var(--color1);
+    font-size: 15px;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width:426px) {
+    nav ul {
+        height: 260px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .nav_top {
+        overflow-x: hidden;
+    }
+
+    .footer_redes li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .nav_top {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .nav_top_list {
+        margin-top: 5px;
+    }
+
+    .nav_top_list a {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav_btn_inscripcion {
+        border: none;
+    }
+
+    .nav_top_list a:hover {
+        border: none;
+        color: var(--color5);
+    }
+
+    .section_prop_edu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .nav_top_list a {
+        font-size: 1.4rem;
+        display: block;
+        padding: 10px;
+    }
+
+    .nav_top_list a:hover {
+        border: 3px solid var(--color5);
+        border-radius: 5px;
+        color: var(--color5);
+    }
+
+    .div_info {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info_parrafo1 .info_parrafo2 {
+        width: 60%;
+    }
+
+    .div_info img {
+        width: 50%;
+        height: 20em;
+    }
+
+    .card_prop_edu img {
+        width: 70%;
+        height: 15em;
+    }
+
+    .section_news {
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    .section_news p {
+        font-size: 1.2rem;
+    }
+}
+        
+
+    
+    
+    
+
